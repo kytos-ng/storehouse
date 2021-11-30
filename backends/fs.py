@@ -66,6 +66,7 @@ class FileSystem(StoreBase):
     def _write_to_file(self, filename, box):
         dotted_filename = str(filename).replace('/', '.')
         lockfile = f'{self.lock_path}/{dotted_filename}.lock'
+        # pylint: disable=abstract-class-instantiated
         lock = FileLock(lockfile)
         with lock:
             with open(filename, 'wb') as save_file:
@@ -74,6 +75,7 @@ class FileSystem(StoreBase):
     def _load_from_file(self, filename):
         dotted_filename = str(filename).replace('/', '.')
         lockfile = f'{self.lock_path}/{dotted_filename}.lock'
+        # pylint: disable=abstract-class-instantiated
         lock = FileLock(lockfile)
         with lock:
             try:
