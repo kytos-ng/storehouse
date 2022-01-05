@@ -1,2 +1,2 @@
-filelock
-etcd3
+filelock==3.0.12
+etcd3==0.12.0
