@@ -25,6 +25,15 @@ Security
 ========
 
 
+[2022.1.0] - 2022-02-03
+***********************
+
+Changed
+=======
+- New versioning schema, following kytos core versioning
+- Updated requirements versions
+
+
 [1.3.2] - 2021-02-08
 ********************
 
