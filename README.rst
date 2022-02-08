@@ -90,6 +90,31 @@ Callback function:
        # box: the retrieved Box instance.
        # error: False when the operation is successful, True otherwise.
 
+kytos.storehouse.update
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Event requesting to update data to a box in a namespace.
+
+Content:
+
+.. code-block:: python3
+
+   {
+       box_id: <ID of the Box to retrieve data from>,
+       data: <any data to be saved>,
+       namespace: <namespace name>,
+       callback: <callback function> # To be executed after the method returns.
+   }
+
+Callback function:
+
+.. code-block:: python3
+
+   def callback_function_name(event, box, error=False):
+       # event: copy of the original event data
+       # box: copy of the Box instance stored with data and metadata.
+       # error: False when the operation is successful, True otherwise.
+       
 kytos.storehouse.list
 ~~~~~~~~~~~~~~~~~~~~~
 
