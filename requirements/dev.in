@@ -1,5 +1,2 @@
-pip-tools >= 2.0
-coverage
-pytest
-yala
-tox
+-e git+https://github.com/kytos-ng/kytos.git#egg=kytos
+-e .[dev]
