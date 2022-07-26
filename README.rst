@@ -3,6 +3,14 @@
 .. raw:: html
 
   <div align="center">
+   <h2><code>storehouse has been deprecated⚠️</code></h2>
+  </div>
+
+MongoDB has been chosen as a default document-oriented database, so if your NApp needs this type of storage check out `this documentation <https://kytos-ng.github.io/napps/mongodb.html>`_. If you're looking for additional code samples you can also check out `flow_manager <https://github.com/kytos-ng/flow_manager>`_, `topology <https://github.com/kytos-ng/topology>`_ and `mef_eline <https://github.com/kytos-ng/mef_eline>`_.
+
+.. raw:: html
+
+  <div align="center">
     <h1><code>kytos/storehouse</code></h1>
 
     <strong>NApp that provides backends for persistent data storage</strong>
