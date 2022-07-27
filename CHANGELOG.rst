@@ -14,6 +14,7 @@ Changed
 
 Deprecated
 ==========
+storehouse has been deprecated, check out the README.rst for more information
 
 Removed
 =======
